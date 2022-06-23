@@ -1,0 +1,113 @@
+[
+
+  {
+    "direction": [
+      "send",
+      "amf"
+    ],
+    "header": {
+      "type": "offer_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "",
+      "from_no": "01077777777",
+      "to_no": "01012341234",
+      "in_out_flag": 1,
+      "licenseEnable": "true",
+      "callType": 0    
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "offer_res"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "amf"
+    ],
+    "header": {
+      "type": "nego_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "",
+      "in_out_flag": 1,
+      "sdp" ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "nego_res"
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE5"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "amf"
+    ],
+    "header": {
+      "type": "hangup_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "hangup_res"
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE1"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "amf"
+    ],
+    "header": {
+      "type": "del_task_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "del_task_res"
+    }
+  }
+]
+
+

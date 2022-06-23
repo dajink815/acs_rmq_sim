@@ -1,0 +1,133 @@
+[
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "OUTCALL_START_REQ",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "caller": "test",
+      "callee": "01033334444",
+      "reserveCallChnl": 3,
+      "callType": "AI",
+      "display_info": "test",
+      "serviceId": "CONVERT_CALL",
+      "vmsReject": 1
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "OUTCALL_START_RES"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_START_REQ"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_START_RES",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE5"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_CLOSE_REQ",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_CLOSE_RES"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_STOP_REQ"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_STOP_RES",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE1"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "TASK_END_REQ",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "TASK_END_RES"
+    }
+  }
+]
+
+

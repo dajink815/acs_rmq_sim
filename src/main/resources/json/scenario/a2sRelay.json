@@ -1,0 +1,166 @@
+[
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "offer_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "new",
+      "callId": "new",
+      "in_out_flag": 0,
+      "from_no": "01077777777",
+      "to_no": "01012341234",
+      "licenseEnable": "true",
+      "callType": 1,
+      "sdp": "v\u003d0\r\no\u003dSAMSUNG-MGW 1593673049 1593673049 IN IP4 192.168.131.150\r\ns\u003dphone-call\r\nc\u003dIN IP4 192.168.131.150\r\nt\u003d0 0\r\nm\u003daudio 26022 RTP/AVP 98 101\r\nb\u003dAS:30\r\nb\u003dRS:0\r\nb\u003dRR:0\r\na\u003drtpmap:98 AMR/8000\r\na\u003dfmtp:98 octet-align\u003d1; mode-set\u003d7; mode-change-capability\u003d2; max-red\u003d0\r\na\u003drtpmap:101 telephone-event/8000\r\na\u003dmaxptime:20\r\na\u003dptime:20\r\na\u003dsendrecv\r\n" 
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "offer_res"
+    },
+    "body": {
+      "taskId": "taskId",
+      "callId": "callA"
+    }
+  },
+
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "offer_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "taskId",
+      "callId": "new",
+      "from_no": "01077777777",
+      "to_no": "01012341234",
+      "in_out_flag": 1,
+      "licenseEnable": "false",
+      "callType": 1
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "offer_res"
+    },
+    "body": {
+      "callId": "callB"
+    }
+  },
+
+
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "nego_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "taskId",
+      "callId": "callB",
+      "in_out_flag": 1,
+      "sdp": "v\u003d0\r\no\u003dSKT-IBCF 54113415 1593669713 IN IP4 223.33.174.59\r\ns\u003d-\r\nc\u003dIN IP4 223.33.174.59\r\nt\u003d0 0\r\nm\u003daudio 50440 RTP/AVP 98 101\r\nb\u003dAS:30\r\nb\u003dRS:0\r\nb\u003dRR:800\r\na\u003dptime:20\r\na\u003dmaxptime:120\r\na\u003drtpmap:98 AMR/8000\r\na\u003dfmtp:98 mode-set\u003d7; octet-align\u003d1\r\na\u003drtpmap:101 telephone-event/8000\r\na\u003dfmtp:101 0-15\r\na\u003dsendrecv\r\n"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "nego_res"
+    }
+  },
+
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "nego_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "callA",
+      "in_out_flag": 0,
+      "sdp": "v\u003d0\r\no\u003dSAMSUNG-MGW 1593673049 1593673049 IN IP4 192.168.131.150\r\ns\u003dphone-call\r\nc\u003dIN IP4 192.168.131.150\r\nt\u003d0 0\r\nm\u003daudio 26022 RTP/AVP 98 101\r\nb\u003dAS:30\r\nb\u003dRS:0\r\nb\u003dRR:0\r\na\u003drtpmap:98 AMR/8000\r\na\u003dfmtp:98 octet-align\u003d1; mode-set\u003d7; mode-change-capability\u003d2; max-red\u003d0\r\na\u003drtpmap:101 telephone-event/8000\r\na\u003dmaxptime:20\r\na\u003dptime:20\r\na\u003dsendrecv\r\n"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "nego_res"
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE5"
+    }
+  },
+
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "hangup_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "callA"
+    }
+  }, 
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "hangup_res"
+    }
+  },
+
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "hangup_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "callB"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "hangup_res"
+    }
+  },
+
+  {
+    "direction": ["send", "amf"],
+    "header": {
+      "type": "del_task_req",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "callA"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "del_task_res"
+    }
+  }
+]
+
+

@@ -1,0 +1,12 @@
+{
+  "header":{
+    "type":"heartbeat_req",
+    "reasonCode":0,
+    "reason":""
+  },
+  "body":{
+     "cpu_usage" : 30,
+     "memory_usage": 60,
+     "session_count": 10	
+  }
+}

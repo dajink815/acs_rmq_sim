@@ -1,0 +1,155 @@
+[
+  {
+    "direction": "recv",
+    "header": {
+      "type": "INCOMING_CALL_REQ",
+      "reasonCode": 0
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "INCOMING_CALL_RES",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "",
+      "callType": "RELAY",
+      "vmsReject": 0,
+      "serviceId": "CONVERT_CALL",
+      "display_info": "test"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_UPDATE_REQ",
+      "reasonCode": 0
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_UPDATE_RES",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_START_REQ"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_START_RES",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE10"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_CLOSE_REQ",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_CLOSE_RES"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "CALL_STOP_REQ"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "CALL_STOP_RES",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "pause",
+    "header": {
+      "type": "PAUSE1"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "TASK_END_REQ",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "TASK_END_RES"
+    }
+  }
+]
+
+

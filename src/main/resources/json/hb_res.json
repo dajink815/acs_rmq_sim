@@ -1,0 +1,10 @@
+{
+  "header":{
+    "type":"HB_RES",
+    "reasonCode":0,
+    "reason":""
+  },
+  "body":{
+    "svc_status":1
+  }
+}

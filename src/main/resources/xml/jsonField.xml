@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msg>
+    <sessionId>taskId</sessionId>
+    <header>
+        <name>transactionId</name>
+        <name>msgFrom</name>
+        <name>timestamp</name>
+    </header>
+    <body>
+        <name>callId</name>
+        <name>taskId</name>
+        <name>sdp</name>
+        <name>device_sdp</name>
+        <name>in_out_flag</name>
+    </body>
+</msg>

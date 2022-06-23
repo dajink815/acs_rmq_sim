@@ -1,0 +1,10 @@
+{
+  "header":{
+    "type":"login_req",
+    "reasonCode":0,
+    "reason":""
+  },
+  "body":{
+
+  }
+}

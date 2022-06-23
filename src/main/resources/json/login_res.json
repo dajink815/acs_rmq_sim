@@ -1,0 +1,11 @@
+{
+  "header":{
+    "type":"login_res",
+    "reasonCode":0,
+    "reason":""
+  },
+  "body":{
+    "amr_license_count": 6000,
+    "evs_license_count": 6000
+  }
+}

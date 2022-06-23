@@ -1,0 +1,100 @@
+[
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "offer_req"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "offer_res",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "",
+      "in_out_flag": "",
+      "sdp": "",
+      "device_sdp": ""
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "nego_req"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "nego_res",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "",
+      "in_out_flag": "",
+      "device_sdp": "v\u003d0\r\no\u003damf 0 0 IN IP4 100.100.100.57\r\ns\u003d-\r\nc\u003dIN IP4 192.168.7.34\r\nt\u003d0 0\r\nm\u003daudio 10022 RTP/AVP 97 99\r\na\u003drtpmap:97 AMR-WB/16000/1\r\na\u003dfmtp:97 octet-align\u003d1; mode-set\u003d7\r\na\u003drtpmap:99 telephone-event/8000\r\na\u003dfmtp:99 0-16\r\na\u003dptime:20\r\na\u003dsendrecv\r\na\u003ddirection:active\r\n",
+      "sampling_rate": "16000"
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "hangup_req"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "hangup_res",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": "",
+      "participant_count": 0
+    }
+  },
+
+  {
+    "direction": "recv",
+    "header": {
+      "type": "del_task_req"
+    }
+  },
+
+  {
+    "direction": [
+      "send",
+      "a2s"
+    ],
+    "header": {
+      "type": "del_task_res",
+      "reasonCode": 0
+    },
+    "body": {
+      "taskId": "",
+      "callId": ""
+    }
+  }
+
+]
+
+
